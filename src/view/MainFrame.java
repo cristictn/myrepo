@@ -30,11 +30,7 @@ import utils.MagazinListener;
 
 public class MainFrame {
 	
-	// deci fii atent 
-	// proieectul asta utilizeaza si o baza de date 
-	// putem sa il impartim si ca MVC ca sa mai ai un pattern ... deja 3
-	// boooooooon deci acum avem si MVC 
-	// mvc, observer, singleton, si hai sa facem si factory 
+
 
 	private JFrame frame;
 
