@@ -9,12 +9,11 @@ import java.sql.SQLException;
 import model.Magazin;
 import model.Produs;
 
-//modificat
 public class MainController {
 	public static void incarcaProduseDinDB() throws SQLException{
 		final String URL = "jdbc:mysql://127.0.0.1/bazadedate";
 		final String USERNAME = "root";
-		final String PASSWORD= "root";
+		final String PASSWORD= "";
 		
 		
 	
@@ -58,7 +57,7 @@ public class MainController {
 	public static void modificaUnProdus(String denumire,double pretNou) throws SQLException{
 		final String URL = "jdbc:mysql://127.0.0.1/bazadedate";
 		final String USERNAME = "root";
-		final String PASSWORD= "root";
+		final String PASSWORD= "";
 		
 			 try {
 				Class.forName("com.mysql.jdbc.Driver");
