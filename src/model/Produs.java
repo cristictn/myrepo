@@ -27,6 +27,9 @@ public class Produs {
 	public Produs() {
 	}
 	
+	public String getDenumireSiPret(){
+		return denumire+" "+pret;
+	}
 	
 	
 }

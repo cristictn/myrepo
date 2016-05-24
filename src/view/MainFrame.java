@@ -26,15 +26,6 @@ import utils.MagazinListener;
 
 public class MainFrame {
 	
-	// deci fii atent 
-	// proieectul asta utilizeaza si o baza de date 
-	// putem sa il impartim si ca MVC ca sa mai ai un pattern ... deja 3
-	// boooooooon deci acum avem si MVC 
-	// mvc, observer, singleton, si hai sa facem si factory 
-	// cand o sa trimiti proiectul sa nu lasi comm astea :))) sunt pt tine 
-	// mainframe reprezinta frame-ul tau principal si e realizat in swing
-	
-	// datele sunt citite din baza de date 
 
 	private JFrame frame;
 

@@ -8,11 +8,6 @@ public class TestFactory {
 		Produs produsA = produsFactory.getProdus("A");
 		Produs produsB = produsFactory.getProdus("B");
 		Produs produsC = produsFactory.getProdus("C");
-		
-		
-		produsA.setDenumire("Produs A");
-		produsB.setDenumire("Produs B");
-		produsC.setDenumire("Produs C");
 
 		System.out.println(produsA);
 		System.out.println(produsB);

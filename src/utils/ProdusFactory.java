@@ -7,7 +7,7 @@ import model.ProdusC;
 
 public class ProdusFactory {
 //factory nu va fi folosit in aplicatie efectiv, este pur didactic
-	public Produs getProdus(String tipProdus) {
+	public static Produs getProdus(String tipProdus) {
 		if (tipProdus.equals("A"))
 			return new ProdusA();
 		else if (tipProdus.equals("B"))

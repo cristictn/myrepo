@@ -7,9 +7,11 @@ import utils.MagazinListener;
 public class Magazin {
 	private static Magazin singleton=null;
 	
-	private ArrayList<Produs> produse = new ArrayList<Produs>();
+	private static ArrayList<Produs> produse = new ArrayList<Produs>();
+
 	
-	private ArrayList<MagazinListener> listeners = new ArrayList<>();
+	private static ArrayList<MagazinListener> listeners = new ArrayList<>();
+	
 	private Magazin(){
 		
 	}
@@ -20,8 +22,9 @@ public class Magazin {
 		return singleton;
 	}
 	
-	public void adaugaProdus(Produs p){
-		produse.add(p);
+	public static void adaugaProdus(Produs p){
+		if(p!=null) produse.add(p);
+		else System.out.println("Produs NULL!");
 		notifyMagazinListeners();
 	}
 	
@@ -29,7 +32,7 @@ public class Magazin {
 		return this.produse;
 	}
 	
-	public void eliminaProdus(Produs p){
+	public static void eliminaProdus(Produs p){
 		produse.remove(p);
 	}
 	public void addMagazinListener(MagazinListener ml){
@@ -40,9 +43,20 @@ public class Magazin {
 		listeners.remove(ml);
 	}
 	
-	private void notifyMagazinListeners(){
+	private static void notifyMagazinListeners(){
 		for(MagazinListener ml:listeners){
 			ml.listaProduseModificata();
 		}
 	}
+	
+	public static int getLenghtArrayProduse()
+	{
+		return produse.size();
+	}
+	
+	public static int getLenghtArrayListeners()
+	{
+		return listeners.size();
+	}
+	
 }
